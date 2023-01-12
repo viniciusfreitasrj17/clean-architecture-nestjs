@@ -1,0 +1,34 @@
+GET http://localhost:3000/bank-accounts
+###
+
+GET http://localhost:3000/bank-accounts/4c234060-e4ee-4c03-bfe4-bf560c194b2e
+###
+
+POST http://localhost:3000/bank-accounts
+Content-Type: application/json
+
+{
+  "account_number": "B45134C"
+}
+###
+
+PATCH  http://localhost:3000/bank-accounts/123
+Content-Type: application/json
+
+{
+  "account_number": "C12346A"
+}
+###
+
+DELETE  http://localhost:3000/bank-accounts/123
+###
+
+POST http://localhost:3000/bank-accounts/transfer
+Content-Type: application/json
+
+{
+  "from": "C12346A",
+  "to": "B45134C",
+  "amount": 100
+}
+###
