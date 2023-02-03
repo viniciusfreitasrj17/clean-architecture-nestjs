@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity()
-export class BankAccount {
+export class BankAccountSchemaTypeOrm {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -11,3 +11,5 @@ export class BankAccount {
   @Column({ length: 255 })
   account_number: string;
 }
+
+// entidade anemica
